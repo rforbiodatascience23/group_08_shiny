@@ -6,4 +6,5 @@
 #' @noRd
 app_server <- function(input, output, session) {
   mod_aminoAcidGraph_server("aminoAcidGraph_1")
+  mod_peptideCreate_server("peptideCreate_1")
 }

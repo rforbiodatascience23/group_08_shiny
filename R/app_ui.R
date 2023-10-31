@@ -15,7 +15,8 @@ app_ui <- function(request) {
 
     tabsetPanel(
       tabPanel(title = "panel1",
-               "module1"),
+               mod_peptideCreate_ui("peptideCreate_1")
+               ),
       tabPanel(title = "Amino Acid Count Graph",
                mod_aminoAcidGraph_ui("aminoAcidGraph_1")
                )
