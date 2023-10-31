@@ -1,7 +1,15 @@
 Package: dogmar
 Title: PKG_TITLE
 Version: 0.0.0.9000
-Authors@R: person('AUTHOR_FIRST', 'AUTHOR_LAST', email = 'AUTHOR@MAIL.COM', role = c('cre', 'aut'))
+Authors@R: 
+    c(person(given = "Miguel",
+           family = "González-Valdés Tejero",
+           role = c("aut", "cre"), # There must be a "cre", but there can only be one
+           email = "s233139@student.dtu.dk"), 
+    person(given = "Eszter",
+           family = "Kovács",
+           role = "aut",
+           email = "s233083@dtu.dk"))
 Description: PKG_DESC.
 License: What license is it under?
 Imports: 
