@@ -17,15 +17,24 @@ app_ui <- function(request) {
       tabPanel(title = "panel1",
                "module1"),
       tabPanel(title = "Amino Acid Count Graph",
-               mod_aminoAcidGraph_ui("aminoAcidGraph_1"),
+               mod_aminoAcidGraph_ui("aminoAcidGraph_1"){
                sidebarLayout(
                  sidebarPanel(
-                   "peptide_sequence"
+                   textAreaInput(
+                     inputId = ns("peptide"),
+                     label = "AminoAcid sequence",
+                     width = 350,
+                     height = 150,
+                     placeholder = "Paste peptide sequence"
+                   )
                  ),
                  mainPanel(
-                   "plot"
+                   plotOutput(
+                     outputId = ns("abundance")
+                  )
                  )
                )
+              }
              )
     )
   )
