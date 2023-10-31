@@ -11,6 +11,13 @@ app_ui <- function(request) {
     # Your application UI logic
     fluidPage(
       h1("dogmar")
+    ),
+
+    tabsetPanel(
+      tabPanel(title = "panel1",
+               "module1"),
+      tabPanel(title = "Amino Acid Count Graph",
+               "aminoAcidGraph")
     )
   )
 }
