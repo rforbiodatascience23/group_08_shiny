@@ -7,6 +7,8 @@
 #' @noRd
 #'
 #' @importFrom shiny NS tagList
+#' @importFrom ggplot2 theme
+#' @import dogmar
 mod_aminoAcidGraph_ui <- function(id){
   ns <- NS(id)
   tagList(
