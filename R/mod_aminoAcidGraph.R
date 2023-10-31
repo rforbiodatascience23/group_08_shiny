@@ -8,7 +8,7 @@
 #'
 #' @importFrom shiny NS tagList
 #' @importFrom ggplot2 theme
-#' @import dogmar
+#' @import centralDogma
 mod_aminoAcidGraph_ui <- function(id){
   ns <- NS(id)
   tagList(
@@ -43,7 +43,7 @@ mod_aminoAcidGraph_server <- function(id){
         NULL
       } else{
         input$peptide |>
-          dogmar::translation() +
+          centralDogma::plot_abundance() +
           ggplot2::theme(legend.position = "none")
       }
     })
